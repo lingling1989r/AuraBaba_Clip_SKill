@@ -1,0 +1,27 @@
+{
+  "template_id": "gaming_livestream",
+  "display_name": "游戏直播",
+  "diarization_default": false,
+  "length_defaults": {
+    "mode": "topic_complete",
+    "preferred_min_sec": 20,
+    "preferred_max_sec": 90,
+    "hard_min_sec": 10,
+    "hard_max_sec": 180
+  },
+  "segment_strategy": [
+    "reaction_peak",
+    "mission_completion",
+    "failure_to_payoff",
+    "topic_shift"
+  ],
+  "score_weights": {
+    "topic_completeness": 0.24,
+    "hook_strength": 0.22,
+    "clarity": 0.14,
+    "energy": 0.24,
+    "novelty": 0.16
+  },
+  "required_signals": ["transcript", "timing", "audio_energy"],
+  "ops_copy_style": "structured_story_titles"
+}

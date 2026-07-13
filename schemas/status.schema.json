@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["schema_version", "job_id", "phase", "source", "template", "preferences", "artifacts", "confirmations", "preflight", "progress", "history", "errors"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "job_id": {"type": "string"},
+    "phase": {"type": "string"},
+    "source": {"type": "object"},
+    "template": {"type": "object"},
+    "preferences": {"type": "object"},
+    "artifacts": {"type": "object"},
+    "confirmations": {"type": "object"},
+    "preflight": {"type": "object"},
+    "execution_profile": {"type": ["object", "null"]},
+    "progress": {"type": "object"},
+    "history": {"type": "array"},
+    "errors": {"type": "array"}
+  }
+}

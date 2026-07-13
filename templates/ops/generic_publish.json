@@ -1,0 +1,5 @@
+{
+  "platforms": ["douyin", "xiaohongshu", "bilibili", "kuaishou"],
+  "default_cta": "关注获取更多精彩切片",
+  "default_posting_windows": ["12:00", "18:30", "21:00"]
+}

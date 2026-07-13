@@ -1,0 +1,27 @@
+{
+  "template_id": "sports_highlights",
+  "display_name": "体育赛事",
+  "diarization_default": false,
+  "length_defaults": {
+    "mode": "topic_complete",
+    "preferred_min_sec": 15,
+    "preferred_max_sec": 75,
+    "hard_min_sec": 8,
+    "hard_max_sec": 120
+  },
+  "segment_strategy": [
+    "build_up_event_reaction",
+    "commentary_spike",
+    "crowd_peak",
+    "topic_shift"
+  ],
+  "score_weights": {
+    "topic_completeness": 0.24,
+    "hook_strength": 0.2,
+    "clarity": 0.12,
+    "energy": 0.24,
+    "event_significance": 0.2
+  },
+  "required_signals": ["transcript", "timing", "audio_energy"],
+  "ops_copy_style": "structured_story_titles"
+}

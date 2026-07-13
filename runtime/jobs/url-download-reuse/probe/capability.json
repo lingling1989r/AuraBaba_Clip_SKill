@@ -1,0 +1,28 @@
+{
+  "tools": {
+    "ffmpeg": true,
+    "ffprobe": true
+  },
+  "imports": {
+    "faster_whisper": true,
+    "pyannote_audio": false,
+    "torch": false,
+    "yt_dlp": true
+  },
+  "torch": {
+    "available": false,
+    "cuda_available": false
+  },
+  "system": {
+    "cpu_count": 4,
+    "memory_total_bytes": 8,
+    "memory_available_bytes": 8,
+    "disk_free_bytes": 8
+  },
+  "auth": {
+    "has_hf_token": false
+  },
+  "input": {
+    "audio_present": true
+  }
+}

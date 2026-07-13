@@ -1,0 +1,15 @@
+{
+  "clips": [
+    {
+      "sequence": 1,
+      "headline": "第一条剪辑标题｜用户需求 | 对话老周",
+      "clip_file": "用户需求_001.mp4"
+    }
+  ],
+  "full_article": {
+    "json": "/Users/alice/Desktop/hahha/workspace/clipclipskill/runtime/jobs/ops-full-article/ops/full_article.json",
+    "md": "/Users/alice/Desktop/hahha/workspace/clipclipskill/runtime/jobs/ops-full-article/ops/full_article.md",
+    "docx": "/Users/alice/Desktop/hahha/workspace/clipclipskill/runtime/jobs/ops-full-article/ops/full_article.docx",
+    "pdf": "/Users/alice/Desktop/hahha/workspace/clipclipskill/runtime/jobs/ops-full-article/ops/full_article.pdf"
+  }
+}

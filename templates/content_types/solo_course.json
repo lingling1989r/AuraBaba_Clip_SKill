@@ -1,0 +1,26 @@
+{
+  "template_id": "solo_course",
+  "display_name": "知识课程",
+  "diarization_default": false,
+  "length_defaults": {
+    "mode": "topic_complete",
+    "preferred_min_sec": 60,
+    "preferred_max_sec": 240,
+    "hard_min_sec": 30,
+    "hard_max_sec": 360
+  },
+  "segment_strategy": [
+    "concept_definition_example",
+    "summary_boundary",
+    "topic_shift"
+  ],
+  "score_weights": {
+    "topic_completeness": 0.38,
+    "hook_strength": 0.12,
+    "clarity": 0.25,
+    "novelty": 0.1,
+    "actionability": 0.15
+  },
+  "required_signals": ["transcript", "timing"],
+  "ops_copy_style": "structured_story_titles"
+}

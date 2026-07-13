@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.1",
+  "job_id": "https-youtu-be-example__d26a0caa",
+  "input": {
+    "kind": "url",
+    "video_path": null,
+    "url": "https://youtu.be/example"
+  },
+  "content_template_requested": "podcast_interview",
+  "content_template_confirmed": false,
+  "length_preference": {
+    "mode": "topic_complete",
+    "target_seconds": null
+  },
+  "transcription": {
+    "mode": "whisper",
+    "confirmed": false
+  },
+  "diarization": {
+    "mode": "auto",
+    "confirmed": false
+  },
+  "language_hint": "auto"
+}

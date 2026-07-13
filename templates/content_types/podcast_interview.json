@@ -1,0 +1,26 @@
+{
+  "template_id": "podcast_interview",
+  "display_name": "播客访谈",
+  "diarization_default": true,
+  "length_defaults": {
+    "mode": "topic_complete",
+    "preferred_min_sec": 45,
+    "preferred_max_sec": 180,
+    "hard_min_sec": 20,
+    "hard_max_sec": 300
+  },
+  "segment_strategy": [
+    "speaker_turn_boundary",
+    "question_answer_pair",
+    "topic_shift"
+  ],
+  "score_weights": {
+    "topic_completeness": 0.35,
+    "hook_strength": 0.2,
+    "clarity": 0.2,
+    "novelty": 0.15,
+    "energy": 0.1
+  },
+  "required_signals": ["transcript", "timing"],
+  "ops_copy_style": "structured_story_titles"
+}

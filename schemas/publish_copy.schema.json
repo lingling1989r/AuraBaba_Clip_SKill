@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["template_id", "headline", "short_hook", "description", "hashtags", "cta", "platform_variants"],
+  "properties": {
+    "template_id": {"type": "string"},
+    "headline": {"type": "string"},
+    "short_hook": {"type": "string"},
+    "description": {"type": "string"},
+    "hashtags": {"type": "array", "items": {"type": "string"}},
+    "cta": {"type": "string"},
+    "platform_variants": {"type": "object"}
+  }
+}

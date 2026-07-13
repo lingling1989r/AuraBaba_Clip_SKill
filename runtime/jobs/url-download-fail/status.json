@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.1",
+  "job_id": "url-download-fail",
+  "phase": "failed",
+  "source": {
+    "kind": "url",
+    "input_video_path": null,
+    "source_sha256": null,
+    "origin_path": null,
+    "origin_url": "https://youtu.be/example",
+    "resolved_url": null,
+    "platform": "youtube",
+    "download_status": "pending",
+    "downloaded_video_path": null,
+    "downloader": null,
+    "duration_sec": null,
+    "size_bytes": null
+  },
+  "template": {
+    "suggested": "podcast_interview",
+    "confirmed": null,
+    "confidence": 1.0
+  },
+  "preferences": {
+    "length_mode": "topic_complete",
+    "target_seconds": null,
+    "transcription_mode": "whisper",
+    "diarization_mode": "auto",
+    "language_hint": "auto"
+  },
+  "artifacts": {
+    "probe": null,
+    "capability": null,
+    "execution_profile": null,
+    "estimate": null,
+    "progress_log": "logs/progress.json",
+    "download_metadata": null,
+    "audio": null,
+    "transcript_segments": null,
+    "transcript_text": null,
+    "transcript_srt": null,
+    "transcript_vtt": null,
+    "utterances": null,
+    "diarization": null,
+    "template_decision": null,
+    "segment_candidates": null,
+    "clip_plan": null,
+    "publish_manifest": null,
+    "full_article_markdown": null,
+    "full_article_docx": null,
+    "full_article_pdf": null,
+    "validation_report": null
+  },
+  "confirmations": {
+    "template_gate": {
+      "required": true,
+      "confirmed": false,
+      "confirmed_at": null
+    },
+    "plan_gate": {
+      "required": true,
+      "confirmed": false,
+      "confirmed_at": null
+    }
+  },
+  "preflight": {
+    "verdict": "pending",
+    "checked_at": null,
+    "warnings": [],
+    "blocking_reasons": []
+  },
+  "execution_profile": null,
+  "progress": {
+    "started_at": "2026-06-14T09:12:15+00:00",
+    "updated_at": "2026-06-14T09:12:15+00:00",
+    "overall_percent": 5,
+    "eta_seconds_remaining": null,
+    "current_step": {
+      "id": "probe",
+      "label": "Machine check",
+      "state": "in_progress",
+      "eta_seconds": null,
+      "message": "Started machine check (unknown time): checking video metadata and machine readiness"
+    },
+    "steps": [
+      {
+        "id": "probe",
+        "label": "Machine check",
+        "state": "in_progress"
+      },
+      {
+        "id": "transcribe",
+        "label": "Transcription",
+        "state": "pending"
+      },
+      {
+        "id": "plan",
+        "label": "Clip planning",
+        "state": "pending"
+      },
+      {
+        "id": "render",
+        "label": "Clip rendering",
+        "state": "pending"
+      },
+      {
+        "id": "ops",
+        "label": "Publish package generation",
+        "state": "pending"
+      },
+      {
+        "id": "validate",
+        "label": "Output validation",
+        "state": "pending"
+      }
+    ]
+  },
+  "history": [
+    {
+      "phase": "created",
+      "at": "2026-06-14T09:12:15+00:00",
+      "note": "job created"
+    },
+    {
+      "phase": "failed",
+      "at": "2026-06-14T09:12:15+00:00",
+      "note": "download failed"
+    }
+  ],
+  "errors": [
+    {
+      "at": "2026-06-14T09:12:15+00:00",
+      "message": "download failed: boom"
+    }
+  ]
+}

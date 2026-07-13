@@ -1,0 +1,11 @@
+{
+  "template": "podcast_interview",
+  "clips": [
+    {
+      "sequence": 1,
+      "title": "第一条剪辑标题",
+      "topic": "用户需求",
+      "output_stem": "用户需求_001"
+    }
+  ]
+}

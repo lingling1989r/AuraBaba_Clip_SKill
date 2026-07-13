@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clipclipskill"
+version = "0.1.0"
+description = "Claude Code Skill MVP for long-video clipping"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["yt-dlp>=2025.0.0"]
+
+[project.optional-dependencies]
+asr = ["faster-whisper>=1.1.0"]
+diarization = ["pyannote.audio>=3.3.2"]
+dev = ["pytest>=8.0.0"]
+
+[project.scripts]
+clipclipskill = "clipclipskill.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
