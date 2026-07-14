@@ -1,6 +1,6 @@
 ---
 name: clipclipskill
-description: Long-video clipping skill that probes video metadata, enforces template confirmation, generates transcript-driven clip plans, renders clips, and outputs publishing copy.
+description: Token-efficient long-video clipping skill with a hardcoded workflow and resumable state machine that probes video metadata, generates transcript-driven clip plans, renders clips, and outputs publishing copy for short-video operations.
 ---
 
 # clipclipskill
